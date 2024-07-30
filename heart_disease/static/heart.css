@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 2px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+   
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar .logo-container img {
+    margin-right: 10px;
+    height: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    color: grey;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    top: 10px; 
+    right: 10px; 
+}
+
+.icon-container i {
+    margin: 10px;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.navbar .icon-container a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.content {
+    position: absolute;
+    top: 60px; /* Below the navbar */
+    left: 20px;
+    text-align: left;
+    color: #00695c;
+    margin-top:30px;;
+}
+
+.content h1 {
+    margin-bottom: 0.5em;
+    color:black;
+}
+
+.highlight {
+    color: #007bff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+   
+  }
+  
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 800px; /* Space between form and info */
+    margin-top:140px;
+
+  }
+  
+  .predict-form {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .predict-form input[type="text"], .submit-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    cursor:pointer;
+  }
+  .submit-button:hover{
+     background-color: black;
+     color:white
+  }
+.info {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    z-index: 2; /* Higher than video background */
+    margin-top:95px;
+    border: 1px solid #ccc; /* Border color and width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+  }
+  .info h1 {
+    margin-bottom: 10px; /* Adds space below the heading */
+    font-size:20px;
+  }
+  
+  .info p {
+    margin-top: 10px; /* Adds space above the paragraph */
+  }
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.3; /* Adjust the opacity value as needed */
+
+  }
+  
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('diabetes.static', filename='afterdiabetes.css') }}">
+    <title> Diabetes Prediction Result</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo-container">
+                <img src="{{ url_for('static', filename='Logo.jpg') }}" alt="logo">
+            </li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aiDetection">AI Detection</a></li>
+                <li><a href="#chatbox">Chat Bot</a></li>
+                <li><a href="#doctor">Dr. Consultation</a></li>
+                <li><a href="#fitness">Fitness Model</a></li>
+                <li><a href="#hospital">Hospital</a></li>
+            </ul>
+            <div class="icon-container">
+                <a href="#contact"><i id="icon1" class="fa-solid fa-user"></i></a>
+                <a href="#menu"><i id="icon2" class="fa-solid fa-bars"></i></a>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Heart <span class="highlight">DISEASE</span> Prediction</h1>
+    </div>
+    <div class="content">
+        {% if data == 0 %}
+            <div class="no-disease">
+                <h1>Congratulations!</h1>
+                <p>You don't have diabetes.</p>
+                <div class="fireworks">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                </div>
+                <a href="/" class="home-button">Go back to home page</a>
+            </div>
+        {% else %}
+            <div class="disease">
+                <h1>It's OK to have diabetes </h1>
+                <p>Don't lose hope. Navigate to our doctor's page for further assistance.</p>
+                <a href="/doctors" class="doctor-button">Consult a Doctor</a>
+                <a href="/" class="home-button">Go back to home page</a>
+            </div>
+        {% endif %}
+        
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('diabetes.static', filename='diabetesbackground.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
+

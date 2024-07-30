@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('heart.static', filename='heart.css') }}">
+    <title>Heart Diagnose</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo-container">
+                <img src="{{ url_for('static', filename='Logo.jpg') }}" alt="logo">
+            </li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aiDetection">AI Detection</a></li>
+                <li><a href="#chatbox">Chat Bot</a></li>
+                <li><a href="#doctor">Dr. Consultation</a></li>
+                <li><a href="#fitness">Fitness Model</a></li>
+                <li><a href="#hospital">Hospital</a></li>
+            </ul>
+            <div class="icon-container">
+                <a href="#contact"><i id="icon1" class="fa-solid fa-user"></i></a>
+                <a href="#menu"><i id="icon2" class="fa-solid fa-bars"></i></a>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Heart <span class="highlight">DISEASE</span> Prediction</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form method="POST" action="{{ url_for('heart.predict_heart_disease') }}" class="predict-form">
+                <b>Age:</b> <input type="text" name="a" placeholder="Enter the age..."><br><br>
+                <b>Gender:</b> <input type="text" name="b" placeholder="Enter gender..."><br><br>
+                <b>Constrictive pericarditis (CP):</b> <input type="text" name="c" placeholder="Enter cp..."><br><br>
+                <b>Trestbps:</b> <input type="text" name="d" placeholder="Enter trestbps..."><br><br>
+                <b>Cholestrol:</b> <input type="text" name="e" placeholder="Enter cholestrol..."><br><br>
+                <b>FBS:</b> <input type="text" name="f" placeholder="Enter fbs..."><br><br>
+                <b>Rest ECG:</b> <input type="text" name="g" placeholder="Enter restecg..."><br><br>
+                <b>Thalach:</b> <input type="text" name="h" placeholder="Enter thalach..."><br><br>
+                <b>Exang:</b> <input type="text" name="i" placeholder="Enter exang..."><br><br>
+                <b>Oldpeak:</b> <input type="text" name="j" placeholder="Enter oldpeak..."><br><br>
+                <b>Slope:</b> <input type="text" name="k" placeholder="Enter slope..."><br><br>
+                <b>Ca:</b> <input type="text" name="l" placeholder="Enter ca..."><br><br>
+                <b>Thalassemia:</b> <input type="text" name="m" placeholder="Enter thal..."><br><br>
+                <input type="submit" value="Predict!" class="submit-button">
+            </form>
+        </div>
+    </div>
+    <div class="info">
+        <h1>About <span class="highlight">THE</span> Model</h1>
+        <p>In predicting cardiovascular heart disease, we have used K-Nearest Neighbors (KNN), a simple yet effective machine learning algorithm. KNN works by finding the most similar data points (neighbors) in the training dataset for each new data point and making predictions based on their majority class.
+            <span class="highlight"> Our KNN model achieves an accuracy of 71%</span>, indicating reliable predictions for about 70% of cases. However, for the remaining 30%, we strongly recommend consulting a doctor.<span class="highlight">Visit our doctor consultation page for expert advice and further assistance.</span></p>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('heart.static', filename='heart background.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script src="https://kit.fontawesome.com/ddc4f27e89.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='heart.js') }}"></script>
+</body>
+</html>

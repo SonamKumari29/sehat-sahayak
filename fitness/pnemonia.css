@@ -1,0 +1,221 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 2px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 1000;
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar .logo-container img {
+    margin-right: 10px;
+    height: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    color: grey;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    top: 10px; 
+    right: 10px; 
+}
+
+.icon-container i {
+    margin: 10px;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.navbar .icon-container a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.heading {
+    /* border: 1px solid black; */
+    font-weight: bolder;
+    padding: 10px;
+    font-size:40px;
+}
+/* Main content styles */
+main {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.meal-plan {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-info {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.nutrition-info h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.value {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.value span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.meal {
+    margin-bottom: 20px;
+}
+
+.meal h3 {
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.meal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meal-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.meal-details {
+    flex: 1;
+}
+
+.meal-details h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.meal-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.meal-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.meal-actions button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.meal-actions button:hover {
+    background: #0056b3;
+}
+
+.meal-actions button + button {
+    background: #28a745;
+}
+
+.meal-actions button + button:hover {
+    background: #218838;
+}

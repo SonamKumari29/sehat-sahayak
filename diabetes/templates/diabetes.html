@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('diabetes.static', filename='diabetes.css') }}">
+    <title>Diabetes Diagnose</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo-container">
+                <img src="{{ url_for('static', filename='Logo.jpg') }}" alt="logo">
+            </li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aiDetection">AI Detection</a></li>
+                <li><a href="#chatbox">Chat Bot</a></li>
+                <li><a href="#doctor">Dr. Consultation</a></li>
+                <li><a href="#fitness">Fitness Model</a></li>
+                <li><a href="#hospital">Hospital</a></li>
+            </ul>
+            <div class="icon-container">
+                <a href="#contact"><i id="icon1" class="fa-solid fa-user"></i></a>
+                <a href="#menu"><i id="icon2" class="fa-solid fa-bars"></i></a>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Diabetes <span class="highlight">DISEASE</span> Prediction</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form method="POST" action="{{ url_for('diabetes.predict_diabetes') }}" class="predict-form">
+                <b>Gender:</b> <input type="text" name="b" placeholder="Enter gender (1 for female and 0 for male)..."><br><br>
+                <b>Age:</b> <input type="text" name="a" placeholder="Enter the age(enter in integer)..."><br><br>
+                <b>hypertension:</b> <input type="text" name="c" placeholder="Enter hypertension..."><br><br>
+                <b>heart_disease:</b> <input type="text" name="d" placeholder="Enter heart_disease(1 for yes and 0 for no)..."><br><br>
+                <b>bmi:</b> <input type="text" name="e" placeholder="Enter bmi(enter in integer)..."><br><br>
+                <b>HbA1c_level:</b> <input type="text" name="f" placeholder="Enter HbA1c_level(enter in integer)..."><br><br>
+                <b>blood_glucose_level:</b> <input type="text" name="g" placeholder="Enter blood_glucose_level..."><br><br>
+            
+                <input type="submit" value="Predict!" class="submit-button">
+            </form>
+        </div>
+    </div>
+    <div class="info">
+        <h1>About <span class="highlight">THE</span> Model</h1>
+        <p>In predicting diabetes, we have used Random Forest Classifier, a powerful and versatile machine learning algorithm. Random Forest works by constructing multiple decision trees during training and outputting the mode of the classes for classification tasks. <span class="highlight">Our Random Forest model achieves an accuracy of 96.4%</span> , indicating reliable predictions for about 96.4% of cases.However, for the remaining 3.6%, we strongly recommend consulting a doctor. <span class="highlight">Visit our doctor consultation page for expert advice and further assistance.</span></p>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('diabetes.static', filename='diabetesbackground.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script src="https://kit.fontawesome.com/ddc4f27e89.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

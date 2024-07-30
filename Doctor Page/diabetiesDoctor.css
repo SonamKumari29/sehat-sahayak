@@ -1,0 +1,152 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 2px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 1000;
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar .logo-container img {
+    margin-right: 10px;
+    height: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    color: grey;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    top: 10px; 
+    right: 10px; 
+}
+
+.icon-container i {
+    margin: 10px;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.navbar .icon-container a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.heading {
+    /* border: 1px solid black; */
+    font-weight: bolder;
+    padding: 10px;
+    font-size:40px;
+}
+/* .hero {
+    /* background-color: #0066cc; 
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+} */
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 330px;
+    width: 100%;
+    /* border: 2px solid black; */
+    background-image:url('doctor1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color:#0fa6f2;
+    color: white;
+}
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+    
+}
+.hero p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-buttons .call-now {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cta-buttons .btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}

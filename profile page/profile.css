@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 2px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+   
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar .logo-container img {
+    margin-right: 10px;
+    height: 70px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    color: grey;
+    font-weight: bolder;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+.icon-container i {
+    margin: 10px;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+.navbar .icon-container a:hover {
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top:90px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+}
+
+.username {
+    margin: 10px 0 5px;
+    font-size: 2em;
+    color: #333;
+}
+
+.user-tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.profile-info {
+    padding: 0 20px;
+}
+
+.profile-info h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.profile-info p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 10px;
+}
+
+.profile-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.social-icon.twitter {
+    background-image: url('twitter-icon.png'); /* Replace with your icon image */
+}
+
+.social-icon.linkedin {
+    background-image: url('linkedin-icon.png'); /* Replace with your icon image */
+}
+
+.social-icon.github {
+    background-image: url('github-icon.png'); /* Replace with your icon image */
+}
+
+.account-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn.edit-profile {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+
+
+}
+
+.btn.edit-profile:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn.sign-out {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+
+
+}
+
+.btn.sign-out:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn.delete-account {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.btn.delete-account:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
